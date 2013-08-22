@@ -1,0 +1,12 @@
+Source: ros-hydro-rtctree
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-toyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), omniidl-python, python-omniorb, ros-hydro-catkin, unzip
+Homepage: http://ros.org/wiki/openrtm_tools
+Standards-Version: 3.9.2
+
+Package: ros-hydro-rtctree
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: API for interacting with running RT-Components and managing RTM-based systems using OpenRTM-aist.
