@@ -13,11 +13,18 @@
 
   <url>https://github.com/gbiggs/rtshell</url>
 
+  <rosdep name="unzip" />
+
   <depend package="rtctree" />
   <depend package="rtsprofile" />
 
+  <rosdep name="rostest" />
+  <rosdep name="mk" />
+
+  <rosdep name="omniorb" />
+
   <export>
-    <python path="${prefix}/lib/python2.7/site-packages" />
+    <python path="${prefix}/lib/python2.7/dist-packages" />
   </export>
 
 </package>
