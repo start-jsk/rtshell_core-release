@@ -14,8 +14,11 @@
   <url>https://github.com/gbiggs/rtsprofile</url>
 
   <export>
-    <python path="${prefix}/lib/python2.7/site-packages" />
+    <python path="${prefix}/lib/python2.7/dist-packages" />
   </export>
+
+  <rosdep name="unzip" />
+  <rosdep name="mk" />
 
 </package>
 
