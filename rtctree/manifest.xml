@@ -13,10 +13,12 @@
 
   <url>https://github.com/gbiggs/rtctree</url>
 
+  <rosdep name="unzip" />
+  <rosdep name="mk" />
   <rosdep name="python-omniorb" />
 
   <export>
-    <python path="${prefix}/lib/python2.7/site-packages" />
+    <python path="${prefix}/lib/python2.7/dist-packages" />
   </export>
 
 </package>
