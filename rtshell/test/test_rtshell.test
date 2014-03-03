@@ -1,0 +1,4 @@
+<launch>
+  <env name="RTCTREE_NAMESERVERS" value="localhost:2809" />
+  <test test-name="test_rtshell" pkg="rtshell" type="test_rtshell.py" />
+</launch>
