@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rtsprofile</name>
-  <version>1.0.1</version>
+  <version>3.0.0</version>
 
   <description>
    <p>Library to read, manipulate and write RT system profiles using the RTSProfile XML schema.</p>
@@ -21,6 +21,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>unzip</build_depend>
+  <build_depend>mk</build_depend>
 
   <export/>
 
