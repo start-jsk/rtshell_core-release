@@ -9,7 +9,6 @@
   <maintainer email="k-okada@jsk.t.u-tokyo.ac.jp">Kei Okada</maintainer>
   <maintainer email="iisaito@kinugarage.com">Isaac Isao Saito</maintainer>
   <author email="git@killbots.net">Geoffrey Biggs</author>
-  <author email="k-okada@jsk.t.u-tokyo.ac.jp">Kei Okada</author>
 
   <license>EPL</license>
   <url type="website">http://ros.org/wiki/rtshell_core</url>
