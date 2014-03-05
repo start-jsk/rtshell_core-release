@@ -1,3 +1,26 @@
+## rtshell_core - 3.0.0-1
+
+User `k-okada@kokada-t430s` released the packages in the `rtshell_core` repository by running `/usr/bin/bloom-release --rosdistro hydro --track hydro rtshell_core` on `Wed, 05 Mar 2014 08:49:46 -0000`
+
+These packages were released:
+- `rtctree`
+- `rtshell`
+- `rtshell_core`
+- `rtsprofile`
+
+Version of package(s) in repository `rtshell_core`:
+- rosdistro version: `3.0.0-0`
+- old version: `3.0.0-0`
+- new version: `3.0.0-1`
+
+Versions of tools used:
+- bloom version: `0.4.8`
+- catkin_pkg version: `0.1.25`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## rtshell_core (hydro) - 3.0.0-0
 
 User `n130s@130s-serval` released the packages in the `rtshell_core` repository into the `hydro` distro by running `/usr/bin/bloom-release --rosdistro hydro --track hydro rtshell_core --edit` on `Mon, 03 Mar 2014 06:55:47 -0000`
