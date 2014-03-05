@@ -13,7 +13,6 @@
   <maintainer email="k-okada@jsk.t.u-tokyo.ac.jp">Kei OKada</maintainer>
   <maintainer email="iisaito@kinugarage.com">Isao Isaac Saito</maintainer>
   <author email="git@killbots.net">Geoffrey Biggs</author>
-  <author email="k-okada@jsk.t.u-tokyo.ac.jp">Kei OKada</author>
 
   <license>EPL</license>
   <url type="website">http://ros.org/wiki/openrtm_tools</url>
@@ -22,6 +21,7 @@
 
   <build_depend>unzip</build_depend>
   <build_depend>mk</build_depend>
+  <build_depend>rosbuild</build_depend>
 
   <export/>
 
