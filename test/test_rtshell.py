@@ -20,11 +20,27 @@ class TestRtshellOnline(unittest.TestCase):
 
     def test_rtls(self):
         # check if rtshell runs
-        check_call(['rosrun','rtshell','rtls'])
+        rtshell_path = check_output(['rospack','find','rtshell']).rstrip()
+        # if rosbuild environment
+        if os.path.exists(os.path.join(rtshell_path, "bin")) :
+            rtctree_path = check_output(['rospack','find','rtctree']).rstrip()
+            rtsprofile_path = check_output(['rospack','find','rtsprofile']).rstrip()
+            check_call(['PYTHONPATH=%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:$PYTHONPATH rosrun rtshell rtls'%(rtshell_path, rtctree_path, rtsprofile_path)], shell=True)
+        # else if catkin environment
+        else:
+            check_call(['rosrun','rtshell','rtls'])
 
     def test_rtcryo(self):
         # check if rtcryo runs
-        check_call(['rosrun','rtshell','rtcryo'])
+        rtshell_path = check_output(['rospack','find','rtshell']).rstrip()
+        # if rosbuild environment
+        if os.path.exists(os.path.join(check_output(['rospack','find','rtshell']).rstrip(), "bin")) :
+            rtctree_path = check_output(['rospack','find','rtctree']).rstrip()
+            rtsprofile_path = check_output(['rospack','find','rtsprofile']).rstrip()
+            check_call(['PYTHONPATH=%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:$PYTHONPATH rosrun rtshell rtcryo'%(rtshell_path, rtctree_path, rtsprofile_path)], shell=True)
+        # else if catkin environment
+        else:
+            check_call(['rosrun','rtshell','rtcryo'])
 
     def test_share(self):
         # check if rtshell runs

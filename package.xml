@@ -18,9 +18,12 @@
   <build_depend>unzip</build_depend>
   <build_depend>mk</build_depend>
   <build_depend>rosbuild</build_depend>
+  <build_depend>rosbash</build_depend>
   <build_depend>rostest</build_depend>
+  <build_depend>omniorb</build_depend>
 
-  <test_depend>omniorb</test_depend>
+  <run_depend>rtctree</run_depend>
+  <run_depend>rtsprofile</run_depend>
 
   <export/>
 </package>
