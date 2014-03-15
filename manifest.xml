@@ -19,6 +19,7 @@
   <depend package="rtsprofile" />
 
   <rosdep name="rostest" />
+  <rosdep name="rosbash" />
   <rosdep name="mk" />
 
   <rosdep name="omniorb" />
