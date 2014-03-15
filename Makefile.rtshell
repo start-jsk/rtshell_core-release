@@ -1,5 +1,5 @@
 INSTALL_DIR = ${CURDIR}
-INSTALL_SCRIPTS_DIR = ${CURDIR}
+INSTALL_SCRIPTS_DIR = ${CURDIR}/bin
 INSTALL_DATA_DIR    = ${CURDIR}
 SOURCE_DIR  = build/rtshell-3.0.0
 TARBALL     = build/rtshell-3.0.0.zip
