@@ -20,7 +20,7 @@ if (_make_failed)
   message(FATAL_ERROR "Build of failed")
 endif(_make_failed)
 
-#rosbuild_init()
+rosbuild_init()
 
 #set the default path for built executables to the "bin" directory
 #set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -39,3 +39,5 @@ endif(_make_failed)
 #rosbuild_link_boost(${PROJECT_NAME} thread)
 #rosbuild_add_executable(example examples/example.cpp)
 #target_link_libraries(example ${PROJECT_NAME})
+
+rosbuild_add_rostest(test/test_rtshell.test)
