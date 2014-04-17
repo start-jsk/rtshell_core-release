@@ -19,7 +19,7 @@ if(NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/installed)
     INSTALL_DATA_DIR=${PROJECT_SOURCE_DIR}
     PATCH_DIR=${PROJECT_SOURCE_DIR}/patch
     MK_DIR=${mk_PREFIX}/share/mk
-    MD5SUM_FILE=${PROJECT_SOURCE_DIR}/rtshell-3.0.0.zip.md5sum
+    MD5SUM_FILE=${PROJECT_SOURCE_DIR}/rtshell-3.0.1.zip.md5sum
     RESULT_VARIABLE _make_failed)
   if (_make_failed)
     message(FATAL_ERROR "Build of rtshell failed")
