@@ -11,36 +11,32 @@ import yaml
 
 import rostest
 
+import subprocess
 from subprocess import Popen, PIPE, check_output, check_call, call
 
 class TestRtshellOnline(unittest.TestCase):
+    PYTHONPATH = ''
 
     def setUp(self):
-        pass
-
-    def test_rtls(self):
-        # check if rtshell runs
         rtshell_path = check_output(['rospack','find','rtshell']).rstrip()
         # if rosbuild environment
         if os.path.exists(os.path.join(rtshell_path, "bin")) :
             rtctree_path = check_output(['rospack','find','rtctree']).rstrip()
             rtsprofile_path = check_output(['rospack','find','rtsprofile']).rstrip()
-            check_call(['PYTHONPATH=%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:$PYTHONPATH rosrun rtshell rtls'%(rtshell_path, rtctree_path, rtsprofile_path)], shell=True)
-        # else if catkin environment
-        else:
-            check_call(['rosrun','rtshell','rtls'])
+            self.PYTHONPATH='PYTHONPATH=%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:$PYTHONPATH'%(rtshell_path, rtctree_path, rtsprofile_path)
+
+
+    def test_rtls(self):
+        try:
+            check_output('%s rosrun rtshell rtls'%(self.PYTHONPATH), shell=True, stderr=subprocess.STDOUT)
+        except subprocess.CalledProcessError, (e):
+            self.assertTrue(False, 'subprocess.CalledProcessError: cmd:%s returncode:%s output:%s' % (e.cmd, e.returncode, e.output))
 
     def test_rtcryo(self):
-        # check if rtcryo runs
-        rtshell_path = check_output(['rospack','find','rtshell']).rstrip()
-        # if rosbuild environment
-        if os.path.exists(os.path.join(check_output(['rospack','find','rtshell']).rstrip(), "bin")) :
-            rtctree_path = check_output(['rospack','find','rtctree']).rstrip()
-            rtsprofile_path = check_output(['rospack','find','rtsprofile']).rstrip()
-            check_call(['PYTHONPATH=%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:%s/lib/python2.7/dist-packages:$PYTHONPATH rosrun rtshell rtcryo'%(rtshell_path, rtctree_path, rtsprofile_path)], shell=True)
-        # else if catkin environment
-        else:
-            check_call(['rosrun','rtshell','rtcryo'])
+        try:
+            check_output('%s rosrun rtshell rtcryo'%(self.PYTHONPATH), shell=True, stderr=subprocess.STDOUT)
+        except subprocess.CalledProcessError, (e):
+            self.assertTrue(False, 'subprocess.CalledProcessError: cmd:%s returncode:%s output:%s' % (e.cmd, e.returncode, e.output))
 
     def test_share(self):
         # check if rtshell runs
@@ -49,6 +45,7 @@ class TestRtshellOnline(unittest.TestCase):
     def test_shell_support(self):
         # check if rtshell runs
         fname=os.path.join(check_output(['rospack','find','rtshell']).rstrip(), "share/rtshell/shell_support")
+        self.assertTrue(os.path.exists(fname), "%s does not exists"%(fname))
         self.assertEqual(check_call("bash "+fname, shell=True),0)
 
 #unittest.main()
