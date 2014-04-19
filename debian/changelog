@@ -1,0 +1,25 @@
+ros-hydro-rtshell (3.0.3-0quantal) quantal; urgency=high
+
+  * add depends to git and CA-cert fix
+  * Contributors: Kei Okada
+
+ -- Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>  Sat, 19 Apr 2014 15:00:00 -0000
+
+ros-hydro-rtshell (3.0.2-0quantal) quantal; urgency=high
+
+
+
+ -- Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>  Fri, 18 Apr 2014 15:00:00 -0000
+
+ros-hydro-rtshell (3.0.1-0quantal) quantal; urgency=high
+
+  * Download 3.0.1 tarball
+  * add patch proposed in https://github.com/gbiggs/rtshell/pull/15
+  * add start_omninames.sh start starts omniNames for test code, use port 2010 for test
+  * (test-rtshell.py) check if nameserver exists
+  * display output when test failes
+  * Contributors: Isaac IY Saito, Kei Okada
+
+ -- Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>  Wed, 16 Apr 2014 15:00:00 -0000
+
+
