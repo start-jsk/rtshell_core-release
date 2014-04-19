@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rtshell</name>
-  <version>3.0.2</version>
+  <version>3.0.3</version>
   <description>
    <p>Shell commands for managing RT-Middleware running on OpenRTM-aist.</p>
   </description>
@@ -21,6 +21,7 @@
   <build_depend>rosbash</build_depend>
   <build_depend>rostest</build_depend>
   <build_depend>omniorb</build_depend>
+  <build_depend>git</build_depend>
 
   <run_depend>rtctree</run_depend>
   <run_depend>rtsprofile</run_depend>
