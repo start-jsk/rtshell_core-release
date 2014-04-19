@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rtsprofile</name>
-  <version>3.0.2</version>
+  <version>3.0.3</version>
 
   <description>
    <p>Library to read, manipulate and write RT system profiles using the RTSProfile XML schema.</p>
@@ -22,6 +22,7 @@
   <build_depend>unzip</build_depend>
   <build_depend>mk</build_depend>
   <build_depend>rosbuild</build_depend>
+  <build_depend>git</build_depend>
 
   <export/>
 
