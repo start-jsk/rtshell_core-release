@@ -1,0 +1,12 @@
+Source: ros-groovy-rtshell-core
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin
+Homepage: http://ros.org/wiki/rtshell_core
+Standards-Version: 3.9.2
+
+Package: ros-groovy-rtshell-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rtctree, ros-groovy-rtshell, ros-groovy-rtsprofile
+Description: Metapackage that contains commonly used toolset for RT-Middleware-based modules (namely openrtm_aist_core). Although each of these packages by themselves are ROS-agnostic, you can use them over ROS together with the packages in rtmros_common.
