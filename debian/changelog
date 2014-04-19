@@ -1,0 +1,20 @@
+ros-groovy-rtsprofile (3.0.3-0oneiric) oneiric; urgency=high
+
+  * add depends to git and CA-cert fix
+  * Contributors: Kei Okada
+
+ -- Kei OKada <k-okada@jsk.t.u-tokyo.ac.jp>  Sat, 19 Apr 2014 15:00:00 -0000
+
+ros-groovy-rtsprofile (3.0.2-0oneiric) oneiric; urgency=high
+
+
+
+ -- Kei OKada <k-okada@jsk.t.u-tokyo.ac.jp>  Fri, 18 Apr 2014 15:00:00 -0000
+
+ros-groovy-rtsprofile (3.0.1-0oneiric) oneiric; urgency=high
+
+
+
+ -- Kei OKada <k-okada@jsk.t.u-tokyo.ac.jp>  Wed, 16 Apr 2014 15:00:00 -0000
+
+
