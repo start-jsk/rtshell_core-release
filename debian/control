@@ -1,0 +1,12 @@
+Source: ros-groovy-rtshell
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), libomniorb4-dev, omniidl, omniorb, omniorb-nameserver, ros-groovy-catkin, ros-groovy-mk, ros-groovy-rosbash, ros-groovy-rosbuild, ros-groovy-rostest, unzip
+Homepage: http://ros.org/wiki/openrtm_tools
+Standards-Version: 3.9.2
+
+Package: ros-groovy-rtshell
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-rtctree, ros-groovy-rtsprofile
+Description: Shell commands for managing RT-Middleware running on OpenRTM-aist.
