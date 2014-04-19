@@ -1,3 +1,26 @@
+## rtshell_core (groovy) - 3.0.2-0
+
+The packages in the `rtshell_core` repository were released into the `groovy` distro by running `/usr/bin/bloom-release rtshell_core --track groovy --rosdistro groovy` on `Sat, 19 Apr 2014 10:56:27 -0000`
+
+These packages were released:
+- `rtctree`
+- `rtshell`
+- `rtshell_core`
+- `rtsprofile`
+
+Version of package(s) in repository `rtshell_core`:
+- rosdistro version: `3.0.1-0`
+- old version: `3.0.1-0`
+- new version: `3.0.2-0`
+
+Versions of tools used:
+- bloom version: `0.5.4`
+- catkin_pkg version: `0.2.0`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## rtshell_core (hydro) - 3.0.2-0
 
 The packages in the `rtshell_core` repository were released into the `hydro` distro by running `/usr/bin/bloom-release rtshell_core --track hydro --rosdistro hydro` on `Sat, 19 Apr 2014 10:54:11 -0000`
