@@ -17,8 +17,10 @@ MK_DIR    = $(shell rospack find mk)
 include $(MK_DIR)/git_checkout.mk
 SOURCE_DIR = ${GIT_DIR}
 
+disable_ssl:
+	git config --global http.sslVerify false
 
-installed:  $(SOURCE_DIR) # $(SOURCE_DIR)/unpacked
+installed: disable_ssl $(SOURCE_DIR) # $(SOURCE_DIR)/unpacked
 	(cd $(SOURCE_DIR) && python setup.py build && python setup.py install --prefix $(INSTALL_DIR) --install-scripts $(INSTALL_SCRIPTS_DIR) --install-data $(INSTALL_DATA_DIR) --install-layout=deb --record installed_files.txt)
 	touch installed
 
